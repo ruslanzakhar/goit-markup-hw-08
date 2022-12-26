@@ -69,5 +69,10 @@
     line-height: 1.7;
     color: var(--primary-color);
     padding-bottom: 30px;
+
+    @media screen  and (min-width: 1200px){
+      padding-bottom: 0;
+     
+   }
     
 }

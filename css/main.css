@@ -60,6 +60,7 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    padding: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -273,9 +274,9 @@ header {
 }
 
 .hero {
-  padding: 200px 0 200px;
+  padding: 118px 0 118px;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/back_header.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile_hero.jpg);
   background-color: var(--second-color);
   background-color: #2F303A;
   background-position: center;
@@ -283,19 +284,51 @@ header {
   background-repeat: no-repeat;
   max-width: 1600px;
   margin: 0 auto;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    margin-bottom: 0;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet_hero.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    margin-bottom: 0;
+    padding: 200px 0 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/back_header.jpg);
+  }
 }
 
 .hero__title {
   margin-bottom: 30px;
-  max-width: 700px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 22px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-color);
+  text-align: center;
+  padding: 0 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero__title {
+    width: 768px;
+    font-size: 26px;
+    line-height: 1.62;
+    padding: 0 204px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 700px;
+    padding: 0;
+  }
 }
 
 .hero__btn {
@@ -385,6 +418,11 @@ header {
   line-height: 1.7;
   color: var(--primary-color);
   padding-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .meaning {
+    padding-bottom: 0;
+  }
 }
 
 .clients__list {
