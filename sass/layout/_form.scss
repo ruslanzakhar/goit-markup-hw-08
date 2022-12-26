@@ -1,0 +1,96 @@
+.form-box{
+    display: flex;
+    margin-left: 93px;
+ }
+
+ .form {
+    display: flex;
+    width: 570px;
+    align-items: flex-end;
+}
+ 
+.form__field {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    background-color: var(--hero-bg-color);
+    color: rgba(255, 255, 255, 0.3);
+        & input:focus-within{
+        border-color:  rgba(33, 150, 243, 0.3);
+        outline: none;
+    }
+}
+
+ .form__input:hover,
+ .form__input:focus{
+    border-color: rgba(33, 150, 255, 0.3);
+    
+ }
+
+.form__field label{
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+    
+    }
+
+.form__field input{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 0;
+    background-color: var(--second-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--main-color); 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);    
+}
+
+.form__field input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    }
+
+.form__submit-button{
+    display: flex;
+    margin-left: 12px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover,
+            &:focus{
+            background-color: var(--background-blue);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            }
+}
+
+.form__submit-btn-text {
+    color:var(--main-color);
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+.form__send-icons {    
+    margin-left: 10px;
+    fill: var(--main-color);
+    }
