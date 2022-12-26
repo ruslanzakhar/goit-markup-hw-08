@@ -8,6 +8,7 @@
     text-transform: uppercase;
     color:var(--paragraph-color);
     margin-bottom: 10px;
+    text-align: center;
  }   
 
  .edge__icon-box{
@@ -27,17 +28,39 @@
     
  }
  .edge__elem{
-    width: 270px;
+    width: 100%;
+
+    @media screen  and (min-width: 768px){
+      width: calc((100% - 30px) / 2); 
+     
+   }
+
+   @media screen  and (min-width: 1200px){
+      width: calc((100% - 30px) / 4); 
+   }
+ 
     
  }
 
  .edge__list{
-    display: flex;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     gap: 30px;
+
+    @media screen  and (min-width: 768px) and (max-width: 1199px){
+      display: flex;
+      flex-wrap: wrap;
+      padding: 60px 0;
+   }
+ 
+   @media screen  and (min-width: 1200px){
+      display: flex;
+     
+   }
+
  }
+
 
 .meaning{
     gap: 30px;
@@ -45,4 +68,6 @@
     font-size: 14px;
     line-height: 1.7;
     color: var(--primary-color);
+    padding-bottom: 30px;
+    
 }
