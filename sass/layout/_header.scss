@@ -19,7 +19,7 @@ header {
 }
 
 .header__nav{
-    display: flex;
+    display: none;
     align-items: center;
     margin-right: auto;
 }
@@ -29,7 +29,7 @@ header {
 
 }
 .header__list{
-    display: flex;
+    display: none;
     align-items: center;
     gap: 50px;
         &.header__items .current{
@@ -46,10 +46,9 @@ header {
 }
 
 .header__contacts{
-    display: flex;
+    display: none;
     align-items: center;
     gap: 40px;
-    align-items: center;
     justify-content: center;
 }
 

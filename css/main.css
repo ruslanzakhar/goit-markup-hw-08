@@ -60,7 +60,6 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    padding: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -276,7 +275,7 @@ header {
 .hero {
   padding: 118px 0 118px;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile_hero.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile_hero.jpg);
   background-color: var(--second-color);
   background-color: #2F303A;
   background-position: center;
@@ -289,7 +288,7 @@ header {
 @media screen and (min-width: 768px) {
   .hero {
     margin-bottom: 0;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet_hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet_hero.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -402,7 +401,7 @@ header {
   .edge__list {
     display: flex;
     flex-wrap: wrap;
-    padding: 60px 0;
+    padding-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
