@@ -5,7 +5,6 @@
 
 .footer .container{
    
-    
     @media screen  and (min-width: 1200px){
         display: flex;
          align-items: baseline; 
@@ -13,8 +12,12 @@
  }
 
 .footer__logo-link{
-    display: inline-block;
-    margin-bottom: 20px;
+    // display: inline-block;
+    display: block;
+   text-align: center;
+    
+    
+    // margin-bottom: 20px;
     font-family: 'Raleway' ,sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -22,6 +25,7 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color:var(--main-color);
+    
 }
 
 .footer__list:not(:nth-child(2)){
@@ -83,8 +87,7 @@
 }
 
 .footer__tittle{ 
-    
-    
+    text-align: center;
     margin-top: 0;
     font-weight: 700;
     font-size: 14px;
@@ -98,8 +101,19 @@
 
 .footer__soc-list{
     display: flex;
-    // justify-content: center;
-    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+
+    width: calc((100% - 60px) / 2);
+    
+    @media screen  and (min-width: 1200px) {
+        width: 170px; 
+        height: 92px;
+        &:not(:last-child){
+         margin-right: 30px;
+         
+    }
+        }
 }
  
 
@@ -132,16 +146,34 @@
 
 }
 
+.footer__list{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer__list:not(:nth-child(2)){
+    margin: 0;
+}
+
+
+.form__input{
+    align-items: center;
+}
 
 .footer__soc-icons{
     fill: var(--main-color);
 }
 
+
 .footer__adress-raport{
-    justify-content: center;
+    
     min-width: 231px;
 }
 
  .footer__join-raport{
-    margin-left: 70px;
+    // margin-left: 70px;
+    align-items: center;
+    
  }

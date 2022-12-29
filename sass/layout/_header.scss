@@ -37,6 +37,10 @@ header {
         color: var(--accent-color);
     }
 
+    @media screen  and (min-width: 768px) {
+        display: flex;
+    }
+
     @media screen  and (min-width: 1200px) {
         display: flex;
     }
@@ -52,6 +56,11 @@ header {
     align-items: center;
     gap: 40px;
     justify-content: center;
+
+    @media screen  and (min-width: 768px) {
+        display: flex;
+    }
+
 
     @media screen  and (min-width: 1200px) {
         display: flex;
@@ -131,6 +140,8 @@ header {
     letter-spacing: 0.02em;
     color: var(--primary-color);
     transition: var(--animation);
+
+    
 }
 
 .header__tel{ 
@@ -141,6 +152,15 @@ header {
     letter-spacing: 0.02em;
     color: var(--primary-color);
     transition: var(--animation);
+
+    
+}
+
+.header__contact{
+    @media screen  and (min-width: 768px) {
+        flex-direction: column;
+    }
+
 }
 
 .header__contacts .header__mail:hover ,
@@ -163,6 +183,10 @@ header {
 .header__menu-btn{
     margin-left: auto;
     
+    @media screen  and (min-width: 768px) {
+        display: none;
+    }
+
     @media screen  and (min-width: 1200px) {
         display: none;
     }

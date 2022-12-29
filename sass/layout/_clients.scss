@@ -8,6 +8,11 @@
     margin: -15px;
     margin-bottom: 60px;
 
+    
+    @media screen  and (min-width: 768px) {
+        
+        }
+
     @media screen  and (min-width: 1200px) {
         display: flex;
         flex-wrap: nowrap;    
@@ -21,6 +26,16 @@
     width: calc((100% - 60px) / 2);
     margin: 15px;
     height: 92px;
+
+    @media screen  and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px;
+         width: calc((100% - 60px) / 4);
+         height: 92px;
+        
+        }
+
     @media screen  and (min-width: 1200px) {
         width: 170px; 
         height: 92px;

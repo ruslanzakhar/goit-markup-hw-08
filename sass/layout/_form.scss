@@ -18,7 +18,7 @@
 }
  
 .form__field {
-   
+   padding: 0 15px;
     width: 358px;
     background-color: var(--hero-bg-color);
     color: rgba(255, 255, 255, 0.3);
@@ -33,6 +33,12 @@
      }
 }
 
+.form__input{
+    width: calc(100% - 15px) ;
+    position:absolute;
+    left: 10px;
+    
+}
  .form__input:hover,
  .form__input:focus{
     border-color: rgba(33, 150, 255, 0.3);
@@ -47,9 +53,13 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-color);
-    
+    align-items: center;
     }
 
+    .form__field .lab-tex{
+    text-align: center;
+}
+    
 .form__field input{
     padding-top: 15px;
     padding-bottom: 15px;
