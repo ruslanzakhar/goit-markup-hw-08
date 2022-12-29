@@ -1,17 +1,24 @@
 .form-box{
-    display: flex;
+    
     margin-left: 93px;
+
+    @media screen  and (min-width: 1200px){
+        display: flex;  
+     }
  }
 
  .form {
-    display: flex;
-    width: 570px;
-    align-items: flex-end;
+    
+    width: 100%;
+    @media screen  and (min-width: 1200px){
+        display: flex; 
+        align-items: flex-end;
+        width: 570px; 
+     }
 }
  
 .form__field {
-    display: flex;
-    flex-direction: column;
+   
     width: 358px;
     background-color: var(--hero-bg-color);
     color: rgba(255, 255, 255, 0.3);
@@ -19,6 +26,11 @@
         border-color:  rgba(33, 150, 243, 0.3);
         outline: none;
     }
+
+    @media screen  and (min-width: 1200px){
+        display: flex;  
+        flex-direction: column;
+     }
 }
 
  .form__input:hover,

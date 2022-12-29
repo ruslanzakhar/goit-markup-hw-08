@@ -4,9 +4,12 @@
 }
 
 .footer .container{
-    display: flex;
-    align-items: baseline;
+   
     
+    @media screen  and (min-width: 1200px){
+        display: flex;
+         align-items: baseline; 
+     }
  }
 
 .footer__logo-link{
@@ -24,6 +27,7 @@
 .footer__list:not(:nth-child(2)){
     margin:0;
 }
+
 
 .footer__element{
     margin-bottom: 9px;
@@ -79,6 +83,8 @@
 }
 
 .footer__tittle{ 
+    
+    
     margin-top: 0;
     font-weight: 700;
     font-size: 14px;
@@ -92,7 +98,7 @@
 
 .footer__soc-list{
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
 }
  
@@ -132,6 +138,7 @@
 }
 
 .footer__adress-raport{
+    justify-content: center;
     min-width: 231px;
 }
 

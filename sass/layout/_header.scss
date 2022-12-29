@@ -35,9 +35,11 @@ header {
         &.header__items .current{
         position: relative;
         color: var(--accent-color);
-        
     }
-    
+
+    @media screen  and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .header__items{
@@ -50,6 +52,10 @@ header {
     align-items: center;
     gap: 40px;
     justify-content: center;
+
+    @media screen  and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .header__icon{
@@ -155,36 +161,42 @@ header {
 }
 
 .header__menu-btn{
-
     margin-left: auto;
+    
+    @media screen  and (min-width: 1200px) {
+        display: none;
+    }
 }
 
 .mobile__menu {
     position: fixed;
-  
     width: 100vw;
     height: 100vh;
     background-color: white ;
     top: 0px;
     left: 0px;
+    right: 0px;
     padding: 48px 0;
+    transition: left 300ms, visibility 300ms ;
     .container{
         display: block;
         height: 100%;
     }
+    &.is-hidden{
+        left: 1000px;
+        right: auto;
+    }
 
+   
 }
+
 
 .mobile__menu-close {
 display: block;
-margin-left: auto;
-margin-right: 0;
 position: absolute;
 top: 10px;
 right: 15px;
 background-color: transparent;
-align-items: center;
-justify-content: center; 
 border: none;
 padding: 6px 6px;
 fill: #000000;
@@ -195,9 +207,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 }   
 
-.mobile__list {
-    margin-bottom: 306px;
-}
 
 .mobile__items {
     &:not(:last-child){
@@ -214,6 +223,15 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: #212121; 
 }
 
+.menu-nav{
+height: 100%;
+
+.menu-contacts{
+
+
+}
+
+}
 
 .mobile__list .mobile__items .current {
     color: var(--accent-color);
@@ -269,14 +287,26 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     content: '';
     display: block;
     position: relative;
-    
     left: -10px;
     top: -22px;
     height: 22px;
     width:1px ;
     background-color: rgba(33, 33, 33, 0.2);
-
   
 }
 
-.mobile__soc-link{}
+.header__menu-btn{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+   border: none;
+    background-color: white;
+    fill: #000000;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        fill: var(--accent-color);
+    }
+
+}
+

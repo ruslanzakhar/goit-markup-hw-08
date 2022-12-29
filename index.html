@@ -41,21 +41,26 @@
           +38 096 111 11 11</a>
         </li>
     </ul>    
-  <button type="button" class="header__menu-btn"> 
-   </button>
+  <button type="button" class="header__menu-btn" header__menu-btn>
+    <svg width="40" height="40" class="mobile__icon-open" >
+    <use href="./images/icons.svg#icon-menu_40px"></use>
+</svg></button>
  </div>
- <div class="mobile__menu">
+ <div class="mobile__menu is-hidden" mobile__menu>
  <div class="container">
-  <button type="button" class="mobile__menu-close"> 
-    <svg width="40" height="40" class="mobile__icon" data-modal-close>
+  <button type="button" class="mobile__menu-close" mobile__menu-close > 
+    <svg width="40" height="40" class="mobile__icon" >
     <use href="./images/icons.svg#icon-close"></use>
 </svg></button>
+<div class="menu-nav">
   <ul class="mobile__list">
         <li class="mobile__items"><a class="mobile__link current list" href="./index.html">Студія</a></li>
         <li class="mobile__items"><a class="mobile__link  list" href="./portfolio.html">Портфоліо</a></li>
         <li class="mobile__items"><a class="mobile__link list" href="contacts">Контакти</a></li>
     </ul>
-    </nav>
+  
+    
+<div class="menu-contacts">
     <ul class="mobile__contacts">
        <li class="mobile__contact">
           <a class="mobile__tel" href="tel:+380961111111"> 
@@ -71,8 +76,11 @@
     <li class="mobile__soc-items"><a class="mobile__soc-link">Twitter</a></li>
     <li class="mobile__soc-items"><a class="mobile__soc-link">Facebook</a></li>
     <li class="mobile__soc-items"><a class="mobile__soc-link"></a>Linkedin</li>
-  </ul>  
+  </ul> 
+</div>
+
  </div>
+</div>
 </div>
 </header>
 
@@ -510,7 +518,7 @@
     </div>
     </div>
   <script src="./js/modal.js"></script>
-  
+  <script src="./js/menu.js"></script>
   </body>
  </html>
 
