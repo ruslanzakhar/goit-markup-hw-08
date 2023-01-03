@@ -5,6 +5,13 @@
 
 .footer .container{
    
+
+    @media screen  and (min-width: 768px){
+        display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+     }
+
     @media screen  and (min-width: 1200px){
         display: flex;
          align-items: baseline; 
@@ -12,12 +19,9 @@
  }
 
 .footer__logo-link{
-    // display: inline-block;
+    margin-bottom: 28px;
     display: block;
-   text-align: center;
-    
-    
-    // margin-bottom: 20px;
+    text-align: center;
     font-family: 'Raleway' ,sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -25,12 +29,19 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
     color:var(--main-color);
+
+    @media screen  and (min-width: 1200px){
+       display: inline-block; 
+        margin-bottom: 20px;
+     }
     
 }
 
-.footer__list:not(:nth-child(2)){
-    margin:0;
-}
+
+
+.footer__list{  
+margin-bottom: 60px;
+ }
 
 
 .footer__element{
@@ -64,6 +75,7 @@
 }
 
 .footer__links-tel{
+    
     font-family: inherit;
     font-style: normal;
     font-weight: 400;
@@ -97,14 +109,18 @@
     color: #EEEEEE;
     display: block;
     margin-bottom: 20px;
+
+    @media screen  and (min-width: 1200px){
+        text-align: start;
+ 
+        }
 }
 
 .footer__soc-list{
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
-
-    width: calc((100% - 60px) / 2);
+    // width: calc((100% - 60px) / 2);
     
     @media screen  and (min-width: 1200px) {
         width: 170px; 
@@ -151,15 +167,18 @@
     flex-direction: column;
     align-items: center;
 
+    @media screen  and (min-width: 1200px){
+        align-items: start;
+       }
+     
 }
 
 .footer__list:not(:nth-child(2)){
-    margin: 0;
-}
 
-
-.form__input{
-    align-items: center;
+    @media screen  and (min-width: 1200px){
+        margin: 0;
+       }
+    
 }
 
 .footer__soc-icons{
@@ -168,12 +187,14 @@
 
 
 .footer__adress-raport{
-    
     min-width: 231px;
 }
 
  .footer__join-raport{
-    // margin-left: 70px;
     align-items: center;
+
+    @media screen  and (min-width: 1200px){
+       margin-left: 70px;
+      }
     
  }
