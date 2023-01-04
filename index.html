@@ -127,20 +127,48 @@
       <ul  class="affairs__list">
         <li>
           <div class="affairs__overlay">
-          <img class="affairs__items list"src="./images/dekstop.jpg" alt="робочий стіл" width="370">
+         <picture>
+          <source srcset="./images/dekstop.jpg 1x , 
+          ./images/dekstop_2x.jpg 2x"
+           media="(min-width:1200px)">
+
+            <img class="affairs__items list"
+            srcset="./images/dekstop.jpg 1x , 
+            ./images/dekstop_2x.jpg 2x "
+            src="./images/dekstop.jpg" alt="робочий стіл" width="370">
+       </picture>
           <p class="affairs__overlay-text">Десктопні додатки</p>
         </div>
         </li>
         <li>
           <div class="affairs__overlay">
-          <img class="affairs__items list"
-           src="./images/notebook.jpg" alt="ноутбук" width="370">
+            <picture>
+              <source srcset="./images/notebook.jpg 1x , 
+              ./images/notebook_2x.jpg 2x"
+               media="(min-width:1200px)">
+
+              <img class="affairs__items list"
+              srcset="./images/notebook.jpg 1x , 
+              ./images/notebook_2x.jpg 2x "
+              src="./images/notebook.jpg" alt="ноутбук" width="370">
+         </picture>
+          
            <p class="affairs__overlay-text">Мобільні додатки</p>
+          </div>
           </li>
         <li>
           <div class="affairs__overlay">
-          <img class="affairs__items list"
-           src="./images/laptop.jpg" alt="планшет" width="370">
+            <picture>
+              <source srcset="./images/laptop.jpg 1x , 
+              ./images/laptop_2x.jpg 2x"
+               media="(min-width:1200px)">
+
+              <img class="affairs__items list"
+              srcset="./images/laptop.jpg 1x , 
+              ./images/laptop_2x.jpg 2x "
+              src="./images/laptop.jpg" alt="планшет" width="370">
+         </picture>
+          
            <p class="affairs__overlay-text">Дизайнерські рішення</p>
           </li>
       </ul>
@@ -163,7 +191,7 @@
 
   <source srcset="./images/productdesigner_mob_1x.jpg 1x , 
                   ./images/productdesigner_mob_2x.jpg 2x"
-                   media="(min-width:480px)">
+                   media="(min-width:320px)">
 
                    <img class="team__photo list"
                    srcset="./images/productdesigner.jpg 1x , 
@@ -214,7 +242,7 @@
             
               <source srcset="./images/frontenddeveloper_mob_1x.jpg 1x , 
                               ./images/frontenddeveloper_mob_2x.jpg 2x"
-                               media="(min-width:480px)">                    
+                               media="(min-width:320px)">                    
            
                               <img class="team__photo list" 
                               srcset="./images/frontenddeveloper.jpg 1x , 
@@ -265,7 +293,7 @@
                     
                       <source srcset="./images/marketing_mob_1x.jpg 1x , 
                                       ./images/marketing_mob_2x.jpg 2x"
-                                       media="(min-width:480px)">                    
+                                       media="(min-width:320px)">                    
                    
                                        <img class="team__photo list"
                                        srcset="./images/marketing.jpg 1x ,
@@ -314,7 +342,7 @@
             
               <source srcset="./images/uidesigner_mob_1x.jpg 1x , 
                               ./images/uidesigner_mob_2x.jpg 2x"
-                               media="(min-width:480px)">                    
+                               media="(min-width:320px)">                    
            
                                <img class="team__photo list"
                                srcset="./images/uidesigner.jpg 1x , 

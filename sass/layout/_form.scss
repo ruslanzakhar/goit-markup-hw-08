@@ -1,7 +1,5 @@
 .form-box{
     
-    
-
     @media screen  and (min-width: 1200px){
         display: flex;
          margin-left: 93px; 
@@ -10,6 +8,11 @@
 
  .form {
     width: 100%;
+
+    @media screen  and (min-width: 768px){
+        width: 450px; 
+     }
+    
 
     @media screen  and (min-width: 1200px){
         display: flex; 
@@ -36,10 +39,9 @@
 }
 
 .form__input{
-    
-    
     align-items: center;
-justify-self: start;
+    justify-self: start;
+
     @media screen  and (min-width: 1200px){
        width: 100%;
        position: relative;
@@ -74,7 +76,7 @@ justify-self: start;
 
     @media screen  and (min-width: 1200px){
        text-align: start;
-
+       margin-left: 0;
  
         }
 }
@@ -98,6 +100,7 @@ justify-self: start;
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
     }
 
 .form__submit-button{

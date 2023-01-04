@@ -10,11 +10,13 @@
         display: flex;
          flex-wrap: wrap;
          justify-content: space-around;
+
      }
 
     @media screen  and (min-width: 1200px){
         display: flex;
          align-items: baseline; 
+         flex-wrap: nowrap;
      }
  }
 
@@ -119,12 +121,13 @@ margin-bottom: 60px;
 .footer__soc-list{
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+    
     // width: calc((100% - 60px) / 2);
     
     @media screen  and (min-width: 1200px) {
-        width: 170px; 
-        height: 92px;
+        // width: 170px; 
+        align-items: center;
+        // height: 92px;
         &:not(:last-child){
          margin-right: 30px;
          
@@ -192,9 +195,12 @@ margin-bottom: 60px;
 
  .footer__join-raport{
     align-items: center;
+    margin-bottom: 60px;
+    
 
     @media screen  and (min-width: 1200px){
        margin-left: 70px;
+       margin-bottom: 0;
       }
     
  }

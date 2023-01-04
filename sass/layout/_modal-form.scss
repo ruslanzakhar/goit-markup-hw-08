@@ -22,16 +22,21 @@
     transform: translate(-50%, -50%) scale(1);
     // width:calc(100% - 15px) ;
     width: 450px;
-    height: 609px;
+    
     
     background-color: var(--main-color);
     border-radius: 4px;
     transition: transform 250ms linear ;
     padding: 40px;
 
+    @media screen  and (max-width: 450px){
+        width: 95%;
+        
+     }
 
     @media screen  and (min-width: 1200px){
         width: 528px;
+        height: 609px;
         min-height: 581px;
      }
 }
@@ -114,6 +119,10 @@
         outline: none;
     }
 
+    @media screen  and (max-width: 400px){
+        width: 50%;
+        
+     }
 
     @media screen  and (min-width: 1200px){
         width: 100%;
@@ -155,6 +164,11 @@
             border: 1px solid var(--accent-color);
             outline: none;
         }
+        
+        @media screen  and (max-width: 400px){
+            width: 50%;
+            
+         }
 
         @media screen  and (min-width: 1200px){
             width: 100%;
@@ -222,6 +236,11 @@
     color: var(--primary-color);
     padding-right: 5px;
     padding-left: 7px;
+
+    @media screen  and (max-width: 1199px){
+        font-size: 12px;
+        
+     }
  }
 
 .form__checkbox-link{

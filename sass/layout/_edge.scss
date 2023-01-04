@@ -51,7 +51,8 @@
     @media screen  and (min-width: 768px) and (max-width: 1199px){
       display: flex;
       flex-wrap: wrap;
-      padding-top: 60px ;
+      padding-top: 60px;
+      padding-bottom: 60px;
    }
  
    @media screen  and (min-width: 1200px){
@@ -69,6 +70,11 @@
     line-height: 1.7;
     color: var(--primary-color);
     padding-bottom: 30px;
+
+    @media screen  and (min-width: 768px){
+      padding-bottom: 0;
+      
+   }
 
     @media screen  and (min-width: 1200px){
       padding-bottom: 0;

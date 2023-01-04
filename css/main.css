@@ -269,6 +269,11 @@ header {
     margin-bottom: 10px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .header__mail {
+    margin-bottom: 0;
+  }
+}
 
 .header__tel {
   display: flex;
@@ -470,6 +475,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -485,6 +491,11 @@ header {
   line-height: 1.7;
   color: var(--primary-color);
   padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .meaning {
+    padding-bottom: 0;
+  }
 }
 @media screen and (min-width: 1200px) {
   .meaning {
@@ -692,6 +703,7 @@ header {
   .footer .container {
     display: flex;
     align-items: baseline;
+    flex-wrap: nowrap;
   }
 }
 
@@ -789,12 +801,10 @@ header {
 .footer__soc-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer__soc-list {
-    width: 170px;
-    height: 92px;
+    align-items: center;
   }
   .footer__soc-list:not(:last-child) {
     margin-right: 30px;
@@ -853,10 +863,12 @@ header {
 
 .footer__join-raport {
   align-items: center;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .footer__join-raport {
     margin-left: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -869,6 +881,11 @@ header {
 
 .form {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .form {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form {
@@ -932,6 +949,7 @@ header {
 @media screen and (min-width: 1200px) {
   .form__field .lab-tex {
     text-align: start;
+    margin-left: 0;
   }
 }
 
@@ -954,6 +972,7 @@ header {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
 }
 
 .form__field input:-ms-input-placeholder {
@@ -962,6 +981,7 @@ header {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
 }
 
 .form__field input::placeholder {
@@ -970,6 +990,7 @@ header {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
 }
 
 .form__submit-button {
@@ -1039,15 +1060,20 @@ header {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   width: 450px;
-  height: 609px;
   background-color: var(--main-color);
   border-radius: 4px;
   transition: transform 250ms linear;
   padding: 40px;
 }
+@media screen and (max-width: 450px) {
+  .modal {
+    width: 95%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
+    height: 609px;
     min-height: 581px;
   }
 }
@@ -1128,6 +1154,11 @@ header {
   border: 1px solid var(--accent-color);
   outline: none;
 }
+@media screen and (max-width: 400px) {
+  .form__modal-input {
+    width: 50%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .form__modal-input {
     width: 100%;
@@ -1166,6 +1197,11 @@ header {
 .form__textarea:focus-within {
   border: 1px solid var(--accent-color);
   outline: none;
+}
+@media screen and (max-width: 400px) {
+  .form__textarea {
+    width: 50%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .form__textarea {
@@ -1246,6 +1282,11 @@ header {
   color: var(--primary-color);
   padding-right: 5px;
   padding-left: 7px;
+}
+@media screen and (max-width: 1199px) {
+  .form__span-text {
+    font-size: 12px;
+  }
 }
 
 .form__checkbox-link {
@@ -1362,7 +1403,7 @@ header {
   top: 0px;
   left: 0px;
   right: 0px;
-  padding: 48px 0;
+  padding: 48px 40px;
   transition: left 300ms, visibility 300ms;
 }
 .mobile__menu .container {
@@ -1372,6 +1413,16 @@ header {
 .mobile__menu.is-hidden {
   left: 1000px;
   right: auto;
+}
+@media screen and (min-width: 768px) {
+  .mobile__menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .mobile__menu {
+    padding: 48px 0px;
+  }
 }
 
 .mobile__menu-close {
@@ -1403,12 +1454,8 @@ header {
   color: #212121;
 }
 
-.menu-nav {
-  height: 100%;
-}
-
 .mobile__list {
-  margin-bottom: 250px;
+  height: 60vh;
 }
 
 .mobile__list .mobile__items .current {
@@ -1427,6 +1474,11 @@ header {
   line-height: 40px;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (max-width: 450px) {
+  .mobile__tel {
+    font-size: 30px;
+  }
 }
 
 .mobile__mail {
@@ -1449,6 +1501,11 @@ header {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (max-width: 450px) {
+  .mobile__soc-list {
+    font-size: 14px;
+  }
 }
 
 .mobile__soc-items:not(:last-child) {
