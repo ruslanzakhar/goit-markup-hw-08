@@ -41,9 +41,7 @@
 
 
 
-.footer__list{  
-margin-bottom: 60px;
- }
+
 
 
 .footer__element{
@@ -191,11 +189,20 @@ margin-bottom: 60px;
 
 .footer__adress-raport{
     min-width: 231px;
+    margin-bottom: 60px;
+
+    @media screen  and (min-width: 1200px){
+       
+        margin-bottom: 0;
+       }
 }
+
+
 
  .footer__join-raport{
     align-items: center;
     margin-bottom: 60px;
+    
     
 
     @media screen  and (min-width: 1200px){

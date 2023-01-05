@@ -433,6 +433,11 @@ header {
   margin-bottom: 10px;
   text-align: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .edge__title {
+    text-align: start;
+  }
+}
 
 .edge__icon-box {
   display: flex;
@@ -726,10 +731,6 @@ header {
   }
 }
 
-.footer__list {
-  margin-bottom: 60px;
-}
-
 .footer__element {
   margin-bottom: 9px;
 }
@@ -859,6 +860,12 @@ header {
 
 .footer__adress-raport {
   min-width: 231px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__adress-raport {
+    margin-bottom: 0;
+  }
 }
 
 .footer__join-raport {
